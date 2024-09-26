@@ -95,7 +95,7 @@ def main():
 
 		refresh_button.click(fn=refresh_dropdowns, outputs=[rvc_dropdown, voice_dropdown])
 
-	interface.launch(server_name="127.0.0.1", server_port=5000, quiet=True)
+	interface.launch(server_name=os.environ['HOST'], server_port=os.environ['PORT'], quiet=True)
 
 # delete later
 
